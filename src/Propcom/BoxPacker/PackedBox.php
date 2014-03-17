@@ -4,8 +4,8 @@ namespace Propcom\BoxPacker;
 /**
 * A box that has been packed with items
 */
-interface PackedBox {
-
+interface PackedBox
+{
 	/**
 	 * Get box used
 	 * @return Box

@@ -4,8 +4,8 @@ namespace Propcom\BoxPacker;
 /**
 * A "box" to pack items into
 */
-interface Box {
-
+interface Box
+{
 	/**
 	 * Reference for box type (e.g. SKU or description)
 	 * @return string

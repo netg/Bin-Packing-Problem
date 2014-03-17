@@ -4,8 +4,8 @@ namespace Propcom\BoxPacker;
 /**
 * Provides packing functionality
 */
-interface Packer {
-
+interface Packer
+{
 	/**
 	 * Adds an item to be packed
 	 * @return $this

@@ -4,32 +4,33 @@ namespace Propcom\BoxPacker;
 /**
 * A class that provides a base for packing functionality
 */
-abstract class BasePacker implements Packer {
-
+abstract class BasePacker implements Packer
+{
 	/**
 	 * Adds an item to be packed
 	 * @return $this
 	 */
-	public abstract function addItem(Item $item);
+	abstract public function addItem(Item $item);
 
 	/**
 	 * Adds a box for items to be packed into
 	 * @return $this
 	 */
-	public abstract function addBox(Box $box);
+	abstract public function addBox(Box $box);
 
 	/**
 	 * Does the packing
 	 * @return PackedBox[] An array of PackedBox objects
 	 */
-	public abstract function pack();
+	abstract public function pack();
 
 	/**
 	 * Adds multiple items to be packed
 	 * @param Item[]
 	 * @return $this
 	 */
-	public function addItems(array $items) {
+	public function addItems(array $items)
+	{
 		foreach ($items as $item) {
 			if ( ! ($item instanceof Item)) {
 				throw new UnexpectedValueException("Item is not an instance of \Propcom\BoxPacker\Item");
@@ -46,7 +47,8 @@ abstract class BasePacker implements Packer {
 	 * @param Box[]
 	 * @return $this
 	 */
-	public function addBoxes(array $boxes) {
+	public function addBoxes(array $boxes)
+	{
 		foreach ($boxes as $box) {
 			if ( ! ($box instanceof Box)) {
 				throw new UnexpectedValueException("Box is not an instance of \Propcom\BoxPacker\Box");
