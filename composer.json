@@ -1,0 +1,15 @@
+{
+    "name": "propcom/bin-packing-problem",
+    "description": "Base code provided for pre-interview PHP developers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Propeller Communications",
+            "email": "hello@propcom.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	"php": ">=5.4.0"
+    }
+}
